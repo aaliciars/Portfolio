@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: "Karla", sans-serif;
+}
+
+/* #cb8d90 rosa clarinho */
+/* #a3d3f5 azul clarinho*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(177, 65, 143, 0.945);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(219, 149, 198, 0.89);
+  }
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* background-color: #f3ece9; */
+    /* border-bottom: 1px solid #cb4651; */
+}
+
+.efeito-vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(135, 31, 118, 0.075);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-bottom: 2.5px solid white;
+  }
+
+header nav a {
+    margin-right: 1rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.esp-header {
+    width: 200px;
+    height: 40px;
+    z-index: 600;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: #da2268;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.back {
+    background-image: url(img/Home.png);
+    background-size: 110%;
+    /* background: #f3ece9; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.seta {
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.namealicia {
+    color: #da2268;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.wlc {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.aboutme {
+    background-color: #fdf8fc;
+    color: #da2268;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct-about {
+    width: 1000px;
+    text-align: center;
+}
+
+.ct-img-about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.ct-img-about img {
+    border-radius: 50%;
+}
+
+.aboutme h1 {
+    width: 90%;
+}
+
+.abtme {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.container .card {
+    position: relative;
+    width: 20%;
+    height: 225px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.container:hover .card {
+    filter: blur(5px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container .card:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container .card .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(130px at center 0);
+    text-align: center;
+}
+
+.container .card .circle h2 {
+    color: #fff;
+    font-size: 1.6em;
+    padding: 30px 0;
+}
+
+.container .card .content {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    page-break-after: 20px;
+    text-align: center;
+}
+
+.container .card .content p {
+    color: #666;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a {
+    /* background: #ffb6c1; */
+    background: #da2269f1;
+}
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a {
+    /* background: #da2268; */
+    /* background: #ffb6c1; */
+    background: #da2269e3;
+    ;
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a {
+    /* background: #e6e6fa; */
+    /* background: #ce527b; */
+    background: #da2269c4;
+}
+
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a {
+    /* background: #c47ec4; */
+    background: #da2269b0;
+}
+
+.mypjc {
+    background-color: #da2269af;
+    width: 100%;
+    height: 130vh;
+}
+
+.text-center {
+    padding: 1.5rem;
+}
+
+.text-center h1,
+.text-center p {
+    width: 100%;
+    text-align: center;
+}
+
+.mypjc div h1 {
+    color: #ffbfd8;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.mypjc div p {
+    color: white;
+}
+
+.mypjc a {
+    text-decoration: none;
+}
+
+.card-project {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1.5rem;
+    transition: .6s ease;
+}
+
+.card-project:hover {
+    scale: 105%;
+}
+
+.txt-card {
+    display: block;
+}
+
+.txt-card h2 {
+    color: #da2269af !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.txt-card p {
+    color: #444444 !important;
+    font-size: 1rem;
+}
+
+.card-project img {
+    margin-right: 2.5rem;
+}
+
+.ct-cards {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.actions-card {
+    display: flex;
+    align-items: center;
+}
+
+.myctt {
+    background-color: #ffbfd8;
+    width: 100%;
+    height: 35vh;
+}
+
+.mct {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    color: #da2268;
+}
+
+.mct h1 {
+    font-size: 3rem;
+}
+
+.myct-icon {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgmct {
+    width: 8rem;
+    margin: 1rem;
+}
